@@ -223,7 +223,7 @@ def parse_data(data):
                 logging.warning(f"Помилка в рядку: {el}")
 
         # Додаємо поточний час до словника
-        parsed_data["data"] = str(datetime.now())
+        parsed_data["date"] = str(datetime.now())
         return parsed_data
 
     except Exception as e:
